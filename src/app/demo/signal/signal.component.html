@@ -1,0 +1,13 @@
+<h2>Examples of Writable Signal</h2>
+<div class="d-flex gap-3 align-items-center">
+    <button type="button" class="btn btn-success" (click)="updateCount(1)">+</button>
+    <!-- <span>{{num}}</span> -->
+    <span>{{count()}}</span>
+    <button type="button" class="btn btn-success" (click)="updateCount(-1)">-</button>
+</div>
+
+<h2>Examples of Computed Signal & effect of Untracked </h2>
+<div class="btn-group" role="group" aria-label="Basic example">
+    <input type="number" name="" id="" [(ngModel)]="num">
+    <button type="button" class="btn btn-secondary">{{computedNum()}}</button>
+</div>
